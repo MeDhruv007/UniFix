@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The local backend is plain HTTP. Cleartext is allowed only for these
+     development hosts; everything else stays HTTPS-only. Update the LAN IP
+     if the PC's Wi-Fi address changes. -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">10.69.21.14</domain>
+        <domain includeSubdomains="false">10.153.29.14</domain>
+        <domain includeSubdomains="false">10.0.2.2</domain>
+        <domain includeSubdomains="false">localhost</domain>
+    </domain-config>
+</network-security-config>
